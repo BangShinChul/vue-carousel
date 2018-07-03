@@ -1,5 +1,6 @@
 <template>
   <section class="VueCarousel">
+    {{tapclick}}
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
       <div ref="VueCarousel-inner"
@@ -20,7 +21,6 @@
     </div>
     <pagination v-if="paginationEnabled && pageCount > 0"
       @paginationclick="goToPage($event, 'pagination')"
-      tag-index="tapclick"
       />
     <navigation v-if="navigationEnabled"
       :clickTargetSize="navigationClickTargetSize"
