@@ -1,7 +1,7 @@
 <template>
   <section class="VueCarousel">
-    
-    {{tapclick}}
+
+    <p v-text="tapclick"></p>
 
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
