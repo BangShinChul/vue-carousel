@@ -636,6 +636,9 @@ export default {
     },
     handleTransitionEnd() {
       this.$emit("transitionEnd");
+    },
+    returnCurrentPage() {
+      return this.currentPage;
     }
   },
   mounted() {

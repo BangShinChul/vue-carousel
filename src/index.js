@@ -10,4 +10,6 @@ export default {
   install
 };
 
+module.exports = install;
+
 export { Carousel, Slide };
