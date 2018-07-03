@@ -1,6 +1,6 @@
 <template>
   <div v-show="carousel.pageCount > 1" class="VueCarousel-pagination">
-    <ul class="VueCarousel-dot-container" role="tablist" :currentPage="currentPage">
+    <ul class="VueCarousel-dot-container" role="tablist" ref="currentPage" v-bind:current-page="currentPage">
       <li
         class="VueCarousel-dot"
         aria-hidden="false"
@@ -40,6 +40,12 @@ export default {
       currentPage : 0
     }
   },
+  // props: {
+  //   curPage: {
+  //     type: Number,
+  //     default()
+  //   }
+  // },
   computed: {
     pagniationCount() {
       return this.carousel.scrollPerPage
