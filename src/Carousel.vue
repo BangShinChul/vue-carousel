@@ -19,7 +19,9 @@
       </div>
     </div>
     <pagination v-if="paginationEnabled && pageCount > 0"
-      @paginationclick="goToPage($event, 'pagination')"/>
+      @paginationclick="goToPage($event, 'pagination')"
+      v-bind:tag-index="tapclick"
+      />
     <navigation v-if="navigationEnabled"
       :clickTargetSize="navigationClickTargetSize"
       :nextLabel="navigationNextLabel"
@@ -97,11 +99,9 @@ export default {
     };
   },
   props: {
-
     tapclick: {
-      validator: function(value) {
-        this.goToPage(value, 'pagination')
-      }
+      type: Number,
+      default: 0
     },
     /**
      * Slide transition easing
