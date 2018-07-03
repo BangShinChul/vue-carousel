@@ -20,7 +20,7 @@
     </div>
     <pagination v-if="paginationEnabled && pageCount > 0"
       @paginationclick="goToPage($event, 'pagination')"
-      v-bind:tag-index="tapclick"
+      tag-index="tapclick"
       />
     <navigation v-if="navigationEnabled"
       :clickTargetSize="navigationClickTargetSize"
