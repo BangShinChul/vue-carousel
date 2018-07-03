@@ -21,6 +21,10 @@
 ``` bash
 npm install vue-carousel
 ```
+instead
+``` bash 
+npm install https://github.com/BangShinChul/vue-carousel/tarball/master
+```
 
 or if you prefer yarn
 
