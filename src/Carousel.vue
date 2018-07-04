@@ -1,9 +1,9 @@
 <template>
-  <section class="VueCarousel" id="VueCarousel">
+  <section class="VueCarousel">
 
-    <!-- <h1 style="color:#fff; font-weight:500;">focus : {{focus}}</h1>
+    <h1 style="color:#fff; font-weight:500;">focus : {{focus}}</h1>
 
-    <div class="VueCarousel-wrapper" id="VueCarousel-wrapper"
+    <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
       <div ref="VueCarousel-inner"
         class="VueCarousel-inner"
@@ -27,7 +27,7 @@
       :clickTargetSize="navigationClickTargetSize"
       :nextLabel="navigationNextLabel"
       :prevLabel="navigationPrevLabel"
-      @navigationclick="handleNavigation"/> -->
+      @navigationclick="handleNavigation"/>
   </section>
 </template>
 <script>

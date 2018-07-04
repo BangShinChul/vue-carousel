@@ -37,8 +37,8 @@ export default {
   inject: ["carousel"],
   data() {
     return {
-      currentPage : this.carousel.currentPage
-    }
+      currentPage: this.carousel.currentPage
+    };
   },
   computed: {
     pagniationCount() {
