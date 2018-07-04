@@ -6,7 +6,7 @@
         aria-hidden="false"
         role="presentation"
         :aria-selected="isCurrentDot(index) ? 'true' : 'false'"
-        v-bind:class="{ 'VueCarousel-dot--active': isCurrentDot(index) }"
+        v-bind:class="{ 'VueCarousel-dot--active-{{index}}' : isCurrentDot(index) }"
         v-for="(page, index) in pagniationCount"
         :key="`${page}_${index}`"
         v-on:click="goToPage(index)"
@@ -40,12 +40,6 @@ export default {
       currentPage : 0
     }
   },
-  // props: {
-  //   curPage: {
-  //     type: Number,
-  //     default()
-  //   }
-  // },
   computed: {
     pagniationCount() {
       return this.carousel.scrollPerPage
