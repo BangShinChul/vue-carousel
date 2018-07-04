@@ -1,5 +1,5 @@
 <template>
-  <section class="VueCarousel">
+  <section class="VueCarousel" id="VueCarousel">
 
     <h1 style="color:#fff; font-weight:500;">focus : {{focus}}</h1>
 

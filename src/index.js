@@ -10,15 +10,15 @@ export default {
   install
 };
 
-module.exports = {
-  methods: {
-      returrnCurrentPage: function () {
-          return Carousel.data().currentPage;
-      },
-      goToPage: function (val) {
-          Carousel.methods.goToPage(val);
-      }
-  }
-};
+// module.exports = {
+//   methods: {
+//       returrnCurrentPage: function () {
+//           return Carousel.data().currentPage;
+//       },
+//       goToPage: function (val) {
+//           Carousel.methods.goToPage(val);
+//       }
+//   }
+// };
 
 export { Carousel, Slide };

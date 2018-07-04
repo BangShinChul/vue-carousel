@@ -1,6 +1,6 @@
 <template>
   <div v-show="carousel.pageCount > 1" class="VueCarousel-pagination">
-    <ul class="VueCarousel-dot-container" role="tablist" ref="currentPage" v-bind:current-page="currentPage">
+    <ul class="VueCarousel-dot-container" role="tablist" ref="currentPage" :current-page="this.carousel.currentPage">
       <li
         class="VueCarousel-dot"
         aria-hidden="false"
@@ -37,7 +37,7 @@ export default {
   inject: ["carousel"],
   data() {
     return {
-      currentPage : 0
+      currentPage : this.carousel.currentPage
     }
   },
   computed: {
