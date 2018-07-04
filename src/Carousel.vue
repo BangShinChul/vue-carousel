@@ -1,7 +1,10 @@
 <template>
   <section class="VueCarousel">
 
-    <span v-text="tapclick" style="color:#fff">{{tapclick}}</span>
+    <span v-text="focus" style="color:#fff">{{this.focus}}</span>
+    
+    <h1 style="color:#fff" v-if="this.focus === null || this.focus === 0">no recieve focus</h1>
+    <h1 style="color:#fff" v-else>focus received!</h1>
 
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
@@ -100,7 +103,7 @@ export default {
     };
   },
   props: {
-    tapclick: {
+    focus: {
       type: Number,
       default: 0
     },
