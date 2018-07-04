@@ -1,7 +1,7 @@
 <template>
   <section class="VueCarousel">
 
-    <p v-text="this.$props.tapclick"></p>
+    <p v-text="tapclick"></p>
 
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
@@ -100,6 +100,7 @@ export default {
     };
   },
   props: {
+    tapclick,
     /**
      * Slide transition easing
      * Any valid CSS transition easing accepted
