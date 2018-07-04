@@ -1,7 +1,7 @@
 <template>
   <section class="VueCarousel">
 
-    <h1 v-if="focus" style="color:#fff;">focus : {{focus}}</h1>
+    <h1 style="color:#fff; font-weight:500;">focus : {{focus}}</h1>
 
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
