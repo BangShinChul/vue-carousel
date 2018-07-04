@@ -1,5 +1,5 @@
 <template>
-  <section class="VueCarousel" id="VueCarousel-test">
+  <section class="VueCarousel" v-on:focus="goToPage(focus, 'pagination')">
     <div class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
       <div ref="VueCarousel-inner"
