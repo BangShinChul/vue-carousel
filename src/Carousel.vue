@@ -3,7 +3,7 @@
 
     <h1 style="color:#fff; font-weight:500;">focus : {{focus}}</h1>
 
-    <div class="VueCarousel-wrapper"
+    <div class="VueCarousel-wrapper" id="VueCarousel-wrapper"
       ref="VueCarousel-wrapper">
       <div ref="VueCarousel-inner"
         class="VueCarousel-inner"
