@@ -1,8 +1,8 @@
 <template>
   <section class="VueCarousel">
 
+    <h1>Test!</h1>
     <span v-text="focus" style="color:#fff">{{this.focus}}</span>
-    
     <h1 style="color:#fff" v-if="this.focus === null || this.focus === 0">no recieve focus</h1>
     <h1 style="color:#fff" v-else>focus received!</h1>
 
